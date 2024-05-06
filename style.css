@@ -1,0 +1,108 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+header {
+  background: #111;
+}
+
+.headline {
+  position: relative;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+  background: url("Bilder/Backgrund-växthjälten.jpg") no-repeat center center;
+  background-size: cover;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#111, 0.5);
+  }
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 10;
+  transform: translateX(-50%) translateY(-50%);
+  animation: fade-in 0.35s 0.15s ease-in forwards;
+  h1 {
+    margin: 0;
+    font-size: 4em;
+    line-height: 1.2em;
+  }
+  p {
+    margin: 0;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: serif;
+  }
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  &.scrolled {
+    background: rgba(#111, 0.9);
+  }
+  ul {
+    float: right;
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+  }
+  li {
+    float: left;
+  }
+  a {
+    font-size: 0.9em;
+    color: #bcbcbc;
+    text-decoration: none;
+    margin: 5px 0 0 20px;
+    display: block;
+    &:hover {
+      color: darken(#6e6d6d, 7%);
+    }
+  }
+}
+
+.logo {
+  height: 100px;
+  float: left;
+}
+.bilder{
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  margin: 25px auto;
+  padding: 20px;
+  max-width: 800px;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  box-sizing: border-box;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
