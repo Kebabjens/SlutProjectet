@@ -6,11 +6,9 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   color: #333;
+  background-color: #ffffff;
 }
 
-header {
-  background: #111;
-}
 
 .headline {
   position: relative;
@@ -18,6 +16,7 @@ header {
   color: #fff;
   text-align: center;
   background: url("Bilder/Backgrund-växthjälten.jpg") no-repeat center center;
+  filter: blur(4px);
   background-size: cover;
   &:after {
     position: absolute;
@@ -55,17 +54,22 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 10;
-  &.scrolled {
-    background: rgba(#111, 0.9);
-  }
-  ul {
-    float: right;
+ 
+  .ul {
     list-style: none;
     padding: 25px;
-    margin: 0;
+    margin-left: 10px;
   }
+  .ett {
+    float: right;
+  }
+  .två{
+    float: left;
+  }
+
   li {
     float: left;
+    margin-left: 20px;
   }
   a {
     font-size: 0.9em;
@@ -73,9 +77,10 @@ nav {
     text-decoration: none;
     margin: 5px 0 0 20px;
     display: block;
-    &:hover {
-      color: darken(#6e6d6d, 7%);
-    }
+    
+  }
+  a:hover {
+    color: #c7c7c7;
   }
 }
 
@@ -96,6 +101,33 @@ section {
   font-size: 1.2em;
   line-height: 1.6em;
   box-sizing: border-box;
+}
+footer {
+  background-color: rgb(89, 150, 89);
+}
+.footerText {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 0px;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  
+}
+table{
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 3%;
+}
+table, th, td {
+  border:2px solid black;
 }
 
 @keyframes fade-in {
