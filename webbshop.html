@@ -1,44 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Växthjälten</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Växthjälten</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navBar">
+        <a href="index.html">
+          <div class="logo">
+            <img class="bilder" src="./bilder/logotyp.png" alt="Logo" />
+          </div>
+        </a>
+        <ul class="ul ett">
+          <li><a href="index.html">VäxtHjälten</a></li>
+          <li><a href="webbshop.html">Webbshop</a></li>
+          <li><a href="varukorg.html">Varukorg</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <nav>
-      <a href="index.html">
-        <div class="logo">
-          <img class="bilder" src="./bilder/logotyp.png" alt="Logo">
-        </div>
-      </a>
-      <ul class="ul ett">
-        <li><a href="index.html">VäxtHjälten</a></li>
-        <li><a href="webbshop.html">Webbshop</a></li>
-        <li><a href="varukorg.html">Varukorg</a></li>
-        <li><a href="om-oss.html">Om oss</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="headline">
-    <div class="inner">
+    <div class="headline"></div>
+    <div id="inner">
       <h1>Växt Hjälten</h1>
       <p>Ett grönare liv</p>
     </div>
-  </div>
+    <hr class="hr" />
+    <nav class="Webbwebb">
+      <ul class="ul två">
+        <li id="InomhusBtn">Inomhus växter</li>
+        <li id="UtomhusBtn">Utomhus växter</li>
+        <li id="KrukväxterBtn">Krukväxter</li>
+        <li id="TillbehörBtn">Tillbehör</li>
+      </ul>
+    </nav>
 
-<nav>
-  <ul class="ul två">
-    <li>Inomhus växter</li>
-    <li>utomhus växter</li>
-    <li>krukväxter</li>
-    <li>Tillbehör</li>
-  </ul>
-</nav>
+    <div class="shop" id="Inomhus">
+      <h2>Inomhus Växter</h2>
+      <div class="produkt">
+        <img src="" alt="" />
+        <div class="description">
+          <h3>Blomma</h3>
+          <p>329kr</p>
+        </div>
+      </div>
+      <div class="produkt">
+        <img src="" alt="" />
+        <div class="description">
+          <h3>Blomma</h3>
+          <p>329kr</p>
+        </div>
+      </div>
+      <div class="produkt">
+        <img src="" alt="" />
+        <div class="description">
+          <h3>Blomma</h3>
+          <p>329kr</p>
+        </div>
+      </div>
+      <div class="produkt">
+        <img src="" alt="" />
+        <div class="description">
+          <h3>Blomma</h3>
+          <p>329kr</p>
+        </div>
+      </div>
+    </div>
+    <div class="shop" id="Utomhus">
+      <h2>Utomhus Växter</h2>
+      <div>B1</div>
+      <div>B2</div>
+      <div>B3</div>
+      <div>B4</div>
+    </div>
+    <div class="shop" id="Krukväxter">
+      <h2>Krukväxter</h2>
+      <div>C1</div>
+      <div>C2</div>
+      <div>C3</div>
+      <div>C4</div>
+    </div>
+    <div class="shop" id="Tillbehör">
+      <h2>Tillbehör</h2>
+      <div>D1</div>
+      <div>D2</div>
+      <div>D3</div>
+      <div>D4</div>
+    </div>
 
-</body>
+    <footer>
+      <div class="container">
+        <div class="footerText">
+          <h2>VäxtHjälten</h2>
+        </div>
+        <div class="info">
+          <table class="table">
+            <tr>
+              <th>Butik</th>
+              <th>Telefon nummer</th>
+              <th>Adress</th>
+            </tr>
+            <tr>
+              <td>Stockholm</td>
+              <td>070 123 45-67</td>
+              <td>Stockholmsvägen 33</td>
+            </tr>
+            <tr>
+              <td>Vaxholm</td>
+              <td>070 786 33-48</td>
+              <td>Hamngatan 58</td>
+            </tr>
+            <tr>
+              <td>Göteborg</td>
+              <td>076 389 73-57</td>
+              <td>Göteborggatan 24</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

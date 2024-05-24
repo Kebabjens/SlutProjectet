@@ -1,37 +1,31 @@
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #333;
   background-color: #ffffff;
 }
-
-
+header {
+  color: white;
+}
 .headline {
   position: relative;
   height: 400px;
-  color: #fff;
+
   text-align: center;
-  background: url("Bilder/Backgrund-växthjälten.jpg") no-repeat center center;
-  filter: blur(4px);
+  background-image: url("Bilder/Backgrund-växthjälten.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  &:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(#111, 0.5);
-  }
+  filter: blur(4px);
 }
 
-.inner {
+#inner {
+  color: #fff;
+  filter: blur(0px);
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   opacity: 0;
   z-index: 10;
@@ -49,46 +43,58 @@ body {
     font-family: serif;
   }
 }
-
-nav {
+hr {
+  position: relative;
+  top: -9px;
+  height: 15px;
+  background: rgb(255, 255, 255);
+  border: none;
+}
+.navBar {
   position: fixed;
   width: 100%;
   z-index: 10;
- 
-  .ul {
-    list-style: none;
-    padding: 25px;
-    margin-left: 10px;
-  }
-  .ett {
-    float: right;
-  }
-  .två{
-    float: left;
-  }
+}
+.Webbwebb {
+  position: absolute;
+}
+.ul {
+  font-size: large;
+  list-style: none;
+  padding: 25px;
+  margin-left: 10px;
+}
+.ett {
+  float: right;
+}
+.två {
+  position: relative;
+  width: 1000px;
+  top: -75px;
+  float: left;
+}
 
-  li {
-    float: left;
-    margin-left: 20px;
-  }
-  a {
-    font-size: 0.9em;
-    color: #bcbcbc;
-    text-decoration: none;
-    margin: 5px 0 0 20px;
-    display: block;
-    
-  }
-  a:hover {
-    color: #c7c7c7;
-  }
+li {
+  float: left;
+  margin-left: 20px;
+}
+a {
+  mix-blend-mode: difference;
+  font-size: 0.9em;
+  color: grey;
+  text-decoration: none;
+  margin: 5px 0 0 20px;
+  display: block;
+}
+a:hover {
+  color: #c7c7c7;
 }
 
 .logo {
   height: 100px;
   float: left;
 }
-.bilder{
+.bilder {
   width: 100%;
   height: 100%;
 }
@@ -112,22 +118,31 @@ footer {
   align-content: center;
   justify-content: center;
 }
-.container{
+.container {
+  background-color: rgb(89, 150, 89);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  height: 100px;
+  height: 300px;
   margin-bottom: 0px;
   border-bottom: 0px;
   padding-bottom: 0px;
-  
 }
-table{
+
+.info {
+  width: 100%;
+  height: 100px;
+}
+table {
+  position: absolute;
   width: 60%;
   margin-left: 20%;
   margin-bottom: 3%;
 }
-table, th, td {
-  border:2px solid black;
+table,
+th,
+td {
+  border: 2px solid black;
 }
 
 @keyframes fade-in {
@@ -137,4 +152,39 @@ table, th, td {
   100% {
     opacity: 1;
   }
+}
+.shop {
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  position: relative;
+  width: 90%;
+  left: 5%;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.produkt {
+  width: 150px;
+  background-color: white;
+}
+#InomhusBtn {
+  height: 40px;
+  width: 140px;
+}
+#Inomhus {
+  display: block;
+  background-color: green;
+}
+#Utomhus {
+  display: none;
+  background-color: red;
+}
+#Krukväxter {
+  display: none;
+  background-color: blue;
+}
+#Tillbehör {
+  display: none;
+  background-color: orange;
 }
