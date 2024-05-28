@@ -4,16 +4,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  color: #333;
+  color: #222222;
   background-color: #ffffff;
 }
-header {
+#header {
+  position: fixed;
+  top: 0%;
   color: white;
+  background-color: rgb(231, 208, 208);
+  height: 90px;
+  width: 100%;
+  z-index: 5;
 }
 .headline {
   position: relative;
   height: 400px;
-
+  z-index: -10;
   text-align: center;
   background-image: url("Bilder/Backgrund-växthjälten.jpg");
   background-repeat: no-repeat;
@@ -25,10 +31,10 @@ header {
   color: #fff;
   filter: blur(0px);
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   opacity: 0;
-  z-index: 10;
+  z-index: -8;
   transform: translateX(-50%) translateY(-50%);
   animation: fade-in 0.35s 0.15s ease-in forwards;
   h1 {
@@ -45,6 +51,7 @@ header {
 }
 hr {
   position: relative;
+  z-index: -9;
   top: -9px;
   height: 15px;
   background: rgb(255, 255, 255);
@@ -61,27 +68,30 @@ hr {
 .ul {
   font-size: large;
   list-style: none;
-  padding: 25px;
+  padding: 10px;
   margin-left: 10px;
+  margin-right: 10px;
 }
-.ett {
+#ul {
   float: right;
 }
 .två {
+  display: flex;
   position: relative;
-  width: 1000px;
-  top: -75px;
+  top: -55px;
   float: left;
+  flex-direction: column;
 }
 
 li {
   float: left;
   margin-left: 20px;
+  z-index: 10;
 }
 a {
   mix-blend-mode: difference;
   font-size: 0.9em;
-  color: grey;
+  color: rgb(65, 65, 65);
   text-decoration: none;
   margin: 5px 0 0 20px;
   display: block;
@@ -91,7 +101,7 @@ a:hover {
 }
 
 .logo {
-  height: 100px;
+  height: 75px;
   float: left;
 }
 .bilder {
@@ -157,7 +167,7 @@ td {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: rgb(232, 238, 240);
   border-radius: 10px;
   border-width: 3px;
   border-color: black;
@@ -173,6 +183,10 @@ td {
   text-align: center;
 }
 .produktbild {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
   width: 100%;
   height: auto;
 }
@@ -185,6 +199,12 @@ button {
   background-color: rgb(29, 29, 29);
   color: white;
 }
+button:hover {
+  cursor: pointer;
+}
+#ämne {
+  height: 200px;
+}
 .pris {
   &::after {
     content: ":-";
@@ -194,7 +214,7 @@ button {
   height: 600px;
   text-align: center;
   width: 25vw;
-  background-color: white;
+  background-color: rgb(226, 237, 241);
   border-radius: 10px;
   border-width: 3px;
   border-color: black;
@@ -205,11 +225,32 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
-
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 751px) {
+  #hamburger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #hamburger {
+    display: flex;
+  }
   .produkt {
     height: 300px;
+  }
+  #ul {
+    display: none;
+    flex-direction: column;
+    float: left;
+    font-size: 50px;
+    align-items: baseline;
+  }
+  li {
+    padding: 20px;
+  }
+  #inner {
+    top: 30%;
   }
 }
 
@@ -234,4 +275,26 @@ button {
 }
 #Tillbehör {
   display: none;
+}
+.formulär {
+  display: flex;
+  background-color: rgb(226, 237, 241);
+  flex-direction: column;
+  align-items: center;
+}
+.input {
+  position: relative;
+  width: 60%;
+}
+#hamburger {
+  position: absolute;
+  float: right;
+  top: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 60px;
+}
+#hamburger:hover {
+  cursor: pointer;
 }

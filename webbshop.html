@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Växthjälten</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="script.js" defer></script>
+    <script defer src="./hamburgermenu.js"></script>
   </head>
   <body>
     <header>
-      <nav class="navBar">
-        <a href="index.html">
-          <div class="logo">
-            <img class="bilder" src="./bilder/logotyp.png" alt="Logo" />
+      <div id="header">
+        <nav class="navBar">
+          <a href="index.html">
+            <div class="logo">
+              <img class="bilder" src="./bilder/logotyp.png" alt="Logo" />
+            </div>
+          </a>
+          <ul id="ul" class="ul">
+            <li><a href="index.html">VäxtHjälten</a></li>
+            <li><a href="webbshop.html">Webbshop</a></li>
+            <li><a href="varukorg.html">Varukorg</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+          <div id="hamburger">
+            <i class="fa fa-bars"></i>
           </div>
-        </a>
-        <ul class="ul ett">
-          <li><a href="index.html">VäxtHjälten</a></li>
-          <li><a href="webbshop.html">Webbshop</a></li>
-          <li><a href="varukorg.html">Varukorg</a></li>
-          <li><a href="om-oss.html">Om oss</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <div class="headline"></div>
@@ -77,26 +84,117 @@
         <button>Lägg till i varukorg</button>
       </div>
     </div>
+
     <div class="shop" id="Utomhus">
-      <h2>Blomma</h2>
-      <div>B1</div>
-      <div>B2</div>
-      <div>B3</div>
-      <div>B4</div>
+      <div class="title">
+        <h2>Utomhus Växter</h2>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus1.jpg" alt="bild1" />
+        <div class="description">
+          <h3>Grön liten palm</h3>
+          <p class="pris">329</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus2.jpg" alt="bild2" />
+        <div class="description">
+          <h3>Buske</h3>
+          <p class="pris">449</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus3.jpg" alt="bild3" />
+        <div class="description">
+          <h3>Häftig växt</h3>
+          <p class="pris">189</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus4.jpg" alt="bild4" />
+        <div class="description">
+          <h3>Inomhusträd</h3>
+          <p class="pris">599</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
     </div>
     <div class="shop" id="Krukväxter">
-      <h2>Krukväxter</h2>
-      <div>C1</div>
-      <div>C2</div>
-      <div>C3</div>
-      <div>C4</div>
+      <div class="title">
+        <h2>Utomhus Växter</h2>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus1.jpg" alt="bild1" />
+        <div class="description">
+          <h3>Grön liten palm</h3>
+          <p class="pris">329</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus2.jpg" alt="bild2" />
+        <div class="description">
+          <h3>Buske</h3>
+          <p class="pris">449</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus3.jpg" alt="bild3" />
+        <div class="description">
+          <h3>Häftig växt</h3>
+          <p class="pris">189</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus4.jpg" alt="bild4" />
+        <div class="description">
+          <h3>Inomhusträd</h3>
+          <p class="pris">599</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
     </div>
     <div class="shop" id="Tillbehör">
-      <h2>Tillbehör</h2>
-      <div>D1</div>
-      <div>D2</div>
-      <div>D3</div>
-      <div>D4</div>
+      <div class="title">
+        <h2>Utomhus Växter</h2>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus1.jpg" alt="bild1" />
+        <div class="description">
+          <h3>Grön liten palm</h3>
+          <p class="pris">329</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus2.jpg" alt="bild2" />
+        <div class="description">
+          <h3>Buske</h3>
+          <p class="pris">449</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus3.jpg" alt="bild3" />
+        <div class="description">
+          <h3>Häftig växt</h3>
+          <p class="pris">189</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
+      <div class="produkt">
+        <img class="produktbild" src="Bilder/Inomhus4.jpg" alt="bild4" />
+        <div class="description">
+          <h3>Inomhusträd</h3>
+          <p class="pris">599</p>
+        </div>
+        <button>Lägg till i varukorg</button>
+      </div>
     </div>
 
     <footer>
