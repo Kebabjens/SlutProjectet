@@ -14,7 +14,7 @@
         <nav class="navBar">
           <a href="index.html">
             <div class="logo">
-              <img loading="lazy" class="bilder" src="./bilder/logotyp.png" alt="Logo" />
+              <img loading="lazy" srcset="./bilder/Logotyp-lowres.png 480w" sizes="100vw" class="bilder" src="./bilder/logotyp.png" alt="Logo" />
             </div>
           </a>
           <ul id="ul" class="ul">
@@ -43,13 +43,13 @@
       <div>
         <form class="formulär">
           <label for="fname">First Name</label>
-          <input required class="input" type="text" id="name" name="Namn" placeholder="Ditt namn.." />
+          <input required class="input" type="text" id="fname" name="Namn" placeholder="Ditt namn.." />
 
-          <label for="lname">Last Name</label>
+          <label for="epost">Last Name</label>
           <input required type="email" class="input" id="epost" name="Epost" placeholder="Din Epost adress.." />
 
           <label for="stad">Stad</label>
-          <select required class="input" id="stad" name="stad">
+          <select class="input" id="stad" name="stad">
             <option value="stockholm">Stockholm</option>
             <option value="vaxholm">Vaxholm</option>
             <option value="göteborg">Göteborg</option>
@@ -65,7 +65,7 @@
     </section>
     <footer>
       <div class="container">
-        <div class="footerText">
+        <div class="footerText sevillana-regular">
           <h2>VäxtHjälten</h2>
         </div>
         <div class="info">

@@ -1,5 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
 
+.sevillana-regular {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
@@ -131,8 +137,11 @@ section {
 }
 footer {
   background-color: rgb(89, 150, 89);
+  height: 350px;
+  bottom: 0;
 }
 .footerText {
+  font-size: 2vw;
   display: flex;
   width: 100%;
   align-items: center;
@@ -153,12 +162,13 @@ footer {
 .info {
   width: 100%;
   height: 100px;
+  background-color: rgb(89, 150, 89);
 }
 table {
   position: absolute;
   width: 60%;
   margin-left: 20%;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
 }
 table,
 th,
