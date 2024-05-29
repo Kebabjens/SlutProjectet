@@ -76,9 +76,9 @@ hr {
   float: right;
 }
 .två {
+  z-index: -1;
   display: flex;
-  position: relative;
-  top: -55px;
+  top: -75px;
   float: left;
   flex-direction: column;
 }
@@ -86,7 +86,7 @@ hr {
 li {
   float: left;
   margin-left: 20px;
-  z-index: 10;
+  /* z-index: 10; */
 }
 a {
   mix-blend-mode: difference;
@@ -176,7 +176,7 @@ td {
   width: 60%;
   left: 30%;
   padding: 20px;
-  margin: 20px;
+  margin: 30px;
 }
 .title {
   width: 100%;
@@ -243,14 +243,19 @@ button:hover {
     display: none;
     flex-direction: column;
     float: left;
-    font-size: 50px;
+    font-size: 5vh;
     align-items: baseline;
   }
   li {
     padding: 20px;
+    left: 0;
   }
   #inner {
     top: 30%;
+  }
+  .två {
+    justify-content: flex-start;
+    justify-self: flex-start;
   }
 }
 
@@ -297,4 +302,19 @@ button:hover {
 }
 #hamburger:hover {
   cursor: pointer;
+}
+#cartTab {
+  width: 300px;
+  background-color: grey;
+  color: white;
+  position: relative;
+  top: -1300px;
+  left: 20px;
+  bottom: 0;
+
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+}
+.item {
+  margin: 20px;
 }

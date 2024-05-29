@@ -12,7 +12,6 @@ let buttons = {
 };
 
 function ShopNav(type) {
-  console.log(type);
   Object.entries(divs).forEach((element) => {
     element[1].style.display = "none";
   });
@@ -23,3 +22,20 @@ buttons.Inomhus.addEventListener("click", () => ShopNav(Inomhus));
 buttons.Utomhus.addEventListener("click", () => ShopNav(Utomhus));
 buttons.Krukväxter.addEventListener("click", () => ShopNav(Krukväxter));
 buttons.Tillbehör.addEventListener("click", () => ShopNav(Tillbehör));
+
+let Kundvagn = document.getElementsByClassName("knapp");
+let targetDiv = document.getElementById("cartTab");
+
+function AddToCart(prize) {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("item");
+  newDiv.setAttribute("data-prize", prize);
+  newDiv.textContent = "hej";
+  targetDiv.appendChild(newDiv);
+}
+
+for (let knapp of Kundvagn) {
+  let prize = knapp.getAttribute("data-prize");
+  console.log(knapp);
+  knapp.addEventListener("click", () => AddToCart(prize));
+}
