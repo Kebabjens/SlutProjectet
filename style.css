@@ -7,6 +7,7 @@ body {
   color: #222222;
   background-color: #ffffff;
 }
+
 #header {
   position: fixed;
   top: 0%;
@@ -26,15 +27,23 @@ body {
   background-size: cover;
   filter: blur(4px);
 }
-
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #inner {
   color: #fff;
   filter: blur(0px);
   position: absolute;
   top: 40%;
   left: 50%;
-  opacity: 0;
   z-index: -8;
+  opacity: 0;
   transform: translateX(-50%) translateY(-50%);
   animation: fade-in 0.35s 0.15s ease-in forwards;
   h1 {
@@ -81,11 +90,13 @@ hr {
   top: -75px;
   float: left;
   flex-direction: column;
+  cursor: pointer;
 }
 
 li {
   float: left;
   margin-left: 20px;
+  margin-bottom: 20px;
   /* z-index: 10; */
 }
 a {
@@ -257,6 +268,9 @@ button:hover {
     justify-content: flex-start;
     justify-self: flex-start;
   }
+  #cartTab {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -317,4 +331,17 @@ button:hover {
 }
 .item {
   margin: 20px;
+}
+.my-map {
+  position: relative;
+  margin: 20px;
+}
+iframe {
+  margin: 20px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  width: 90%;
+  height: 350px;
 }

@@ -25,17 +25,22 @@ buttons.Tillbehör.addEventListener("click", () => ShopNav(Tillbehör));
 
 let Kundvagn = document.getElementsByClassName("knapp");
 let targetDiv = document.getElementById("cartTab");
+let total = 0;
 
-function AddToCart(prize) {
+function AddToCart(prize, name) {
   let newDiv = document.createElement("div");
   newDiv.classList.add("item");
   newDiv.setAttribute("data-prize", prize);
-  newDiv.textContent = "hej";
+  newDiv.setAttribute("data-name", name);
+
+  newDiv.innerHTML = name + ` &nbsp; &nbsp; &nbsp; pris: ${prize}:-`;
   targetDiv.appendChild(newDiv);
+  total += prize;
 }
 
 for (let knapp of Kundvagn) {
   let prize = knapp.getAttribute("data-prize");
+  let name = knapp.getAttribute("data-name");
   console.log(knapp);
-  knapp.addEventListener("click", () => AddToCart(prize));
+  knapp.addEventListener("click", () => AddToCart(prize, name));
 }
